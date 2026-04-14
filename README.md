@@ -1,6 +1,6 @@
 # 🎓 Centro Educativo N°12 "Leopoldo Lugones"
 
-![Logo del Colegio](imagenes/logo.png)
+![Logo del Colegio](imagenes/CEN%2012%20MARCA-16.png)
 
 Sitio web oficial del Centro Educativo N°12 "Leopoldo Lugones" de Tilisarao, San Luis, Argentina.
 
@@ -26,7 +26,11 @@ Sitio web oficial del Centro Educativo N°12 "Leopoldo Lugones" de Tilisarao, Sa
 
 ---
 
-## 🌐 Estructura del Sitio
+## 📁 Estructura del Proyecto
+
+---
+
+## 🌐 Secciones del Sitio
 
 - **Inicio** - Bienvenida e identidad institucional
 - **Novedades** - Próximamente: noticias y comunicados
@@ -41,6 +45,12 @@ Sitio web oficial del Centro Educativo N°12 "Leopoldo Lugones" de Tilisarao, Sa
 - CSS3 (Flexbox & Grid)
 - JavaScript (Vanilla)
 - GitHub Pages (Hosting)
+
+---
+
+## 🚀 Ver el Sitio Web
+
+Visita: `https://bobbespoja85-maker.github.io/0000/`
 
 ---
 
