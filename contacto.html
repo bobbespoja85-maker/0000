@@ -98,22 +98,26 @@
             margin-bottom: 2rem;
         }
 
-        .map-placeholder {
+        /* Estilos actualizados para el mapa */
+        .map-wrapper {
             background: var(--blanco);
             border-radius: 20px;
-            padding: 4rem;
+            padding: 1rem; /* Padding más pequeño para que el mapa ocupe más espacio */
             box-shadow: 0 10px 40px rgba(30, 58, 138, 0.1);
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            position: relative;
         }
 
-        .map-placeholder p {
-            color: var(--gris);
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
+        .map-frame {
+            width: 100%;
+            height: 450px; /* Altura del mapa */
+            border: 0;
+            border-radius: 15px;
         }
 
         .map-link {
             display: inline-block;
-            margin-top: 1rem;
             padding: 1rem 2rem;
             background: var(--naranja);
             color: var(--blanco);
@@ -176,6 +180,9 @@
         @media (max-width: 768px) {
             .contact-grid {
                 grid-template-columns: 1fr;
+            }
+            .map-frame {
+                height: 300px; /* Altura ajustada para móviles */
             }
         }
     </style>
@@ -245,13 +252,22 @@
     <section class="map-section">
         <div class="map-container">
             <h2 class="fade-in">¿Cómo llegar?</h2>
-            <div class="map-placeholder fade-in">
-                <p>📍 Av. Del Centenario s/n, Tilisarao, San Luis</p>
-                <p style="font-size: 1rem; color: var(--gris);">Tilisarao se encuentra en el departamento de General San Martín, provincia de San Luis.</p>
-                <a href="https://www.google.com/maps/search/Tilisarao,+San+Luis,+Argentina" target="_blank" class="map-link">
-                    Ver en Google Maps →
-                </a>
+            
+            <!-- Contenedor del Mapa -->
+            <div class="map-wrapper fade-in">
+                <iframe 
+                    class="map-frame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.049470866828!2d-65.2832!3d-32.7384307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d3a8a7b6b63cf7%3A0xb3fa47026441dc77!2sCentro%20Educativo%20N%C2%B012%20%22Leopoldo%20Lugones%22!5e0!3m2!1ses-419!2sar!4v1712834923123!5m2!1ses-419!2sar" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+
+            <!-- Enlace directo por si acaso -->
+            <a href="https://www.google.com/maps/place/Centro+Educativo+N%C2%B012+%22Leopoldo+Lugones%22/@-32.7387959,-65.283451,18z/data=!4m6!3m5!1s0x95d3a8a7b6b63cf7:0xb3fa47026441dc77!8m2!3d-32.7384307!4d-65.2832!16s%2Fg%2F11b7q1x_lr?entry=ttu" target="_blank" class="map-link">
+                Abrir en Google Maps App ↗
+            </a>
         </div>
     </section>
 
