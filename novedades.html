@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades | CEN 12 Leopoldo Lugones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-oscuro) 100%);
+            color: var(--blanco);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .novedades-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .novedad-card {
+            background: var(--blanco);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(30, 58, 138, 0.1);
+            border-left: 5px solid var(--naranja);
+            transition: transform 0.3s;
+        }
+
+        .novedad-card:hover {
+            transform: translateX(10px);
+        }
+
+        .novedad-fecha {
+            color: var(--naranja);
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .novedad-card h3 {
+            color: var(--azul-principal);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .novedad-card p {
+            color: var(--gris);
+            line-height: 1.8;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--gris-claro);
+            color: var(--azul-principal);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .coming-soon-box {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--gris-claro);
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .coming-soon-box h2 {
+            color: var(--azul-principal);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .dots {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background: var(--azul-claro);
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .dot:nth-child(1) { animation-delay: -0.32s; }
+        .dot:nth-child(2) { animation-delay: -0.16s; }
+        .dot:nth-child(3) { animation-delay: 0s; }
+
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo-nav">
+                <img src="imagenes/CEN 12 MARCA-16.png" alt="Logo CEN 12">
+                <div class="logo-text">CEN 12<br>Leopoldo Lugones</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>📢 Novedades</h1>
+        <p>Entérate de todo lo que sucede en nuestra institución</p>
+    </header>
+
+    <main class="novedades-content">
+        <article class="novedad-card fade-in">
+            <div class="novedad-fecha">14 de Abril, 2024</div>
+            <h3>Inicio de Clases 2024</h3>
+            <p>Comenzamos un nuevo año lectivo con entusiasmo y compromiso. Les damos la bienvenida a todos los estudiantes y familias que confían en nuestra institución para la formación de sus hijos.</p>
+            <span class="tag">General</span>
+        </article>
+
+        <article class="novedad-card fade-in">
+            <div class="novedad-fecha">10 de Abril, 2024</div>
+            <h3>Nuevo Sitio Web</h3>
+            <p>Estrenamos nuestro nuevo portal digital para mantener a la comunidad educativa informada y conectada. Próximamente más funcionalidades.</p>
+            <span class="tag">Tecnología</span>
+        </article>
+
+        <div class="coming-soon-box fade-in">
+            <h2>¡Más novedades próximamente!</h2>
+            <p>Estamos trabajando para mantenerte informado</p>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="imagenes/CEN 12 MARCA-16.png" alt="Logo" class="footer-logo">
+        <p><strong>Centro Educativo N°12 "Leopoldo Lugones"</strong></p>
+        <p>Tilisarao, San Luis - Argentina</p>
+        <div class="social-links">
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.6; font-size: 0.9rem;">&copy; 2024 CEN 12 Leopoldo Lugones. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

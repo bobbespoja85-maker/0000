@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | CEN 12 Leopoldo Lugones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-oscuro) 100%);
+            color: var(--blanco);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(30, 58, 138, 0.2);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 3px solid var(--naranja);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .about-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--azul-principal);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            color: var(--gris);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-box {
+            background: var(--gris-claro);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(30, 58, 138, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-box h3 {
+            color: var(--azul-principal);
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-box p {
+            color: var(--gris);
+            font-size: 0.9rem;
+        }
+
+        .history-section {
+            background: var(--gris-claro);
+            padding: 4rem 2rem;
+        }
+
+        .history-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .history-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--azul-principal);
+            margin-bottom: 2rem;
+        }
+
+        .history-content p {
+            color: var(--gris);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote {
+            background: var(--blanco);
+            border-left: 5px solid var(--naranja);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 0 15px 15px 0;
+            font-style: italic;
+            color: var(--azul-principal);
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo-nav">
+                <img src="imagenes/CEN 12 MARCA-16.png" alt="Logo CEN 12">
+                <div class="logo-text">CEN 12<br>Leopoldo Lugones</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>🏫 Sobre Nosotros</h1>
+        <p>Conoce nuestra historia y compromiso educativo</p>
+    </header>
+
+    <section class="about-section">
+        <div class="about-grid">
+            <div class="about-image fade-in">
+                <img src="imagenes/CEN 12 MARCA-16.png" alt="Institución CEN 12">
+            </div>
+            <div class="about-text fade-in">
+                <h2>Nuestra Institución</h2>
+                <p>El Centro Educativo N°12 "Leopoldo Lugones" es una institución dedicada a la formación integral de estudiantes de los niveles Inicial, Primario y Secundario. Ubicados en Tilisarao, provincia de San Luis, nos comprometemos con la educación de calidad.</p>
+                <p>Honramos la memoria de Leopoldo Lugones, destacado escritor argentino, promoviendo la cultura, el pensamiento crítico y la excelencia académica en cada uno de nuestros estudiantes.</p>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-box fade-in">
+                <div class="feature-icon">🎨</div>
+                <h3>Nivel Inicial</h3>
+                <p>Educación temprana con enfoque en el desarrollo integral</p>
+            </div>
+            <div class="feature-box fade-in">
+                <div class="feature-icon">📚</div>
+                <h3>Nivel Primario</h3>
+                <p>Formación sólida en valores y conocimientos fundamentales</p>
+            </div>
+            <div class="feature-box fade-in">
+                <div class="feature-icon">🎓</div>
+                <h3>Nivel Secundario</h3>
+                <p>Preparación para la educación superior y la vida adulta</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="history-section">
+        <div class="history-content">
+            <h2 class="fade-in">Nuestra Historia</h2>
+            <p class="fade-in">El Centro Educativo N°12 lleva años sirviendo a la comunidad de Tilisarao y zonas aledañas. Nuestro compromiso con la educación pública de calidad nos ha convertido en un pilar fundamental del desarrollo educativo de la región.</p>
+            
+            <div class="quote fade-in">
+                "La educación es el arma más poderosa que puedes usar para cambiar el mundo."
+                <br><strong>— Nelson Mandela</strong>
+            </div>
+            
+            <p class="fade-in">Continuamos trabajando cada día para ofrecer la mejor educación posible, formando ciudadanos responsables, críticos y comprometidos con su comunidad.</p>
+        </div>
+    </section>
+
+    <footer>
+        <img src="imagenes/CEN 12 MARCA-16.png" alt="Logo" class="footer-logo">
+        <p><strong>Centro Educativo N°12 "Leopoldo Lugones"</strong></p>
+        <p>Tilisarao, San Luis - Argentina</p>
+        <div class="social-links">
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.6; font-size: 0.9rem;">&copy; 2024 CEN 12 Leopoldo Lugones. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

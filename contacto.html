@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | CEN 12 Leopoldo Lugones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-oscuro) 100%);
+            color: var(--blanco);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-card {
+            background: var(--blanco);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(30, 58, 138, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 5px solid var(--naranja);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(30, 58, 138, 0.2);
+        }
+
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-claro));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+            color: var(--blanco);
+        }
+
+        .contact-card h3 {
+            color: var(--azul-principal);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card p,
+        .contact-card a {
+            color: var(--gris);
+            text-decoration: none;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            transition: color 0.3s;
+        }
+
+        .contact-card a:hover {
+            color: var(--naranja);
+        }
+
+        .map-section {
+            background: var(--gris-claro);
+            padding: 4rem 2rem;
+        }
+
+        .map-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .map-container h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--azul-principal);
+            margin-bottom: 2rem;
+        }
+
+        .map-placeholder {
+            background: var(--blanco);
+            border-radius: 20px;
+            padding: 4rem;
+            box-shadow: 0 10px 40px rgba(30, 58, 138, 0.1);
+        }
+
+        .map-placeholder p {
+            color: var(--gris);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 1rem 2rem;
+            background: var(--naranja);
+            color: var(--blanco);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .map-link:hover {
+            background: var(--azul-principal);
+        }
+
+        .horarios-section {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .horarios-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--azul-principal);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .horario-table {
+            width: 100%;
+            background: var(--blanco);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(30, 58, 138, 0.1);
+        }
+
+        .horario-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--gris-claro);
+        }
+
+        .horario-row:last-child {
+            border-bottom: none;
+        }
+
+        .horario-row:nth-child(even) {
+            background: var(--gris-claro);
+        }
+
+        .horario-label {
+            font-weight: 600;
+            color: var(--azul-principal);
+        }
+
+        .horario-value {
+            color: var(--gris);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo-nav">
+                <img src="imagenes/CEN 12 MARCA-16.png" alt="Logo CEN 12">
+                <div class="logo-text">CEN 12<br>Leopoldo Lugones</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>📞 Contacto</h1>
+        <p>Estamos aquí para atenderte</p>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-card fade-in">
+                <div class="contact-icon">📍</div>
+                <h3>Dirección</h3>
+                <p>Av. Del Centenario s/n<br>Tilisarao, San Luis<br>Argentina</p>
+            </div>
+            
+            <div class="contact-card fade-in">
+                <div class="contact-icon">📞</div>
+                <h3>Teléfono</h3>
+                <a href="tel:420389">420389</a>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem;">Llamadas y WhatsApp</p>
+            </div>
+            
+            <div class="contact-card fade-in">
+                <div class="contact-icon">✉️</div>
+                <h3>Correo Electrónico</h3>
+                <a href="mailto:cen12leopoldolugones@gmail.com">cen12leopoldolugones@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="horarios-section">
+        <h2 class="fade-in">Horarios de Atención</h2>
+        <div class="horario-table fade-in">
+            <div class="horario-row">
+                <span class="horario-label">Lunes a Viernes</span>
+                <span class="horario-value">07:00 - 13:00 hs</span>
+            </div>
+            <div class="horario-row">
+                <span class="horario-label">Sábados y Domingos</span>
+                <span class="horario-value">Cerrado</span>
+            </div>
+            <div class="horario-row">
+                <span class="horario-label">Feriados</span>
+                <span class="horario-value">Cerrado</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-container">
+            <h2 class="fade-in">¿Cómo llegar?</h2>
+            <div class="map-placeholder fade-in">
+                <p>📍 Av. Del Centenario s/n, Tilisarao, San Luis</p>
+                <p style="font-size: 1rem; color: var(--gris);">Tilisarao se encuentra en el departamento de General San Martín, provincia de San Luis.</p>
+                <a href="https://www.google.com/maps/search/Tilisarao,+San+Luis,+Argentina" target="_blank" class="map-link">
+                    Ver en Google Maps →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="imagenes/CEN 12 MARCA-16.png" alt="Logo" class="footer-logo">
+        <p><strong>Centro Educativo N°12 "Leopoldo Lugones"</strong></p>
+        <p>Tilisarao, San Luis - Argentina</p>
+        <div class="social-links">
+            <a href="#">📘</a>
+            <a href="#">📸</a>
+            <a href="#">🐦</a>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.6; font-size: 0.9rem;">&copy; 2024 CEN 12 Leopoldo Lugones. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
